@@ -211,8 +211,8 @@ function Scene() {
 // Hero Section with 3D Integration
 function HeroSection() {
   return (
-    <div className="hero-section">
-      <Html position={[0, 8, 0]} center>
+    <group position={[0, 8, 0]}>
+      <Html center transform>
         <div className="hero-content">
           <h1 className="hero-title">
             Advanced Programming Solutions
@@ -226,7 +226,7 @@ function HeroSection() {
           </div>
         </div>
       </Html>
-    </div>
+    </group>
   );
 }
 
