@@ -101,3 +101,160 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Build a 3D website for a programming company based in Iran with interactive objects, rotating objects, particle effects, and traditional website elements. The entire website should be 3D but impressive."
+
+backend:
+  - task: "Backend API endpoint"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Basic backend endpoint working, not main focus for 3D website"
+
+frontend:
+  - task: "3D Scene Setup with React Three Fiber"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented Canvas with Three.js, OrbitControls, Environment, Stars - needs testing"
+
+  - task: "Interactive Floating Code Blocks"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented FloatingCodeBlocks component with 6 code snippets orbiting in 3D space - needs testing"
+
+  - task: "Rotating 3D Objects with Distortion Materials"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented Box, Torus, Sphere with MeshDistortMaterial and animations - needs testing"
+
+  - task: "Particle System Effects"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented 200 animated particles with dynamic movement - needs testing"
+
+  - task: "Hero Section with 3D Integration"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented hero content with Html component positioned in 3D space - needs testing"
+
+  - task: "Services Section Display"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented services grid showing web development and management systems - needs testing"
+
+  - task: "About and Contact Sections"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented about section with stats and contact form positioned in 3D space - needs testing"
+
+  - task: "Navigation and UI Controls"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.css"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented fixed navigation with glass-morphism design and interactive controls - needs testing"
+
+  - task: "3D Interactions and User Controls"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented OrbitControls with zoom, pan, rotate, and auto-rotate features - needs testing"
+
+  - task: "Responsive Design for 3D Elements"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.css"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented responsive styles for mobile and desktop - needs testing"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: true
+
+test_plan:
+  current_focus:
+    - "3D Scene Setup with React Three Fiber"
+    - "Interactive Floating Code Blocks"
+    - "Rotating 3D Objects with Distortion Materials"
+    - "Particle System Effects"
+    - "3D Interactions and User Controls"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Implemented complete 3D website with impressive visual effects. All major 3D components are ready for testing: floating code blocks, rotating objects with distortion materials, particle effects, and 3D-integrated UI sections. Need comprehensive testing of 3D interactions, performance, and responsive behavior."
