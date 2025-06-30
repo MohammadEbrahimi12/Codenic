@@ -297,25 +297,27 @@ function AboutSection() {
 // Contact Section
 function ContactSection() {
   return (
-    <Html position={[-15, 0, 0]} center>
-      <div className="contact-section">
-        <h2 className="section-title">Get In Touch</h2>
-        <div className="contact-content">
-          <p>Ready to bring your vision to life?</p>
-          <div className="contact-form">
-            <input type="text" placeholder="Your Name" className="contact-input" />
-            <input type="email" placeholder="Your Email" className="contact-input" />
-            <textarea placeholder="Your Message" className="contact-textarea"></textarea>
-            <button className="btn-primary">Send Message</button>
-          </div>
-          <div className="contact-info">
-            <p>📧 info@yourcompany.com</p>
-            <p>📱 +98 XXX XXX XXXX</p>
-            <p>📍 Tehran, Iran</p>
+    <group position={[-15, 0, 0]}>
+      <Html center transform>
+        <div className="contact-section">
+          <h2 className="section-title">Get In Touch</h2>
+          <div className="contact-content">
+            <p>Ready to bring your vision to life?</p>
+            <div className="contact-form">
+              <input type="text" placeholder="Your Name" className="contact-input" />
+              <input type="email" placeholder="Your Email" className="contact-input" />
+              <textarea placeholder="Your Message" className="contact-textarea"></textarea>
+              <button className="btn-primary">Send Message</button>
+            </div>
+            <div className="contact-info">
+              <p>📧 info@yourcompany.com</p>
+              <p>📱 +98 XXX XXX XXXX</p>
+              <p>📍 Tehran, Iran</p>
+            </div>
           </div>
         </div>
-      </div>
-    </Html>
+      </Html>
+    </group>
   );
 }
 
