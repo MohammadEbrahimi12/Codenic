@@ -233,28 +233,30 @@ function HeroSection() {
 // Services Section
 function ServicesSection() {
   return (
-    <Html position={[0, -8, 0]} center>
-      <div className="services-section">
-        <h2 className="section-title">Our Expertise</h2>
-        <div className="services-grid">
-          <div className="service-card">
-            <div className="service-icon">🌐</div>
-            <h3>Web Development</h3>
-            <p>Modern, responsive websites with cutting-edge technologies</p>
-          </div>
-          <div className="service-card">
-            <div className="service-icon">⚙️</div>
-            <h3>Management Systems</h3>
-            <p>Large-scale enterprise solutions for complex business needs</p>
-          </div>
-          <div className="service-card">
-            <div className="service-icon">📱</div>
-            <h3>Full-Stack Solutions</h3>
-            <p>End-to-end development from concept to deployment</p>
+    <group position={[0, -8, 0]}>
+      <Html center transform>
+        <div className="services-section">
+          <h2 className="section-title">Our Expertise</h2>
+          <div className="services-grid">
+            <div className="service-card">
+              <div className="service-icon">🌐</div>
+              <h3>Web Development</h3>
+              <p>Modern, responsive websites with cutting-edge technologies</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">⚙️</div>
+              <h3>Management Systems</h3>
+              <p>Large-scale enterprise solutions for complex business needs</p>
+            </div>
+            <div className="service-card">
+              <div className="service-icon">📱</div>
+              <h3>Full-Stack Solutions</h3>
+              <p>End-to-end development from concept to deployment</p>
+            </div>
           </div>
         </div>
-      </div>
-    </Html>
+      </Html>
+    </group>
   );
 }
 
