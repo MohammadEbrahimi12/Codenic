@@ -263,32 +263,34 @@ function ServicesSection() {
 // About Section
 function AboutSection() {
   return (
-    <Html position={[15, 0, 0]} center>
-      <div className="about-section">
-        <h2 className="section-title">About Our Company</h2>
-        <div className="about-content">
-          <p>
-            Based in Iran, we are a forward-thinking programming company 
-            specializing in innovative web development and comprehensive 
-            management systems.
-          </p>
-          <p>
-            Our team combines technical expertise with creative vision to 
-            deliver solutions that not only meet but exceed expectations.
-          </p>
-          <div className="stats">
-            <div className="stat">
-              <span className="stat-number">50+</span>
-              <span className="stat-label">Projects Completed</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">10+</span>
-              <span className="stat-label">Years Experience</span>
+    <group position={[15, 0, 0]}>
+      <Html center transform>
+        <div className="about-section">
+          <h2 className="section-title">About Our Company</h2>
+          <div className="about-content">
+            <p>
+              Based in Iran, we are a forward-thinking programming company 
+              specializing in innovative web development and comprehensive 
+              management systems.
+            </p>
+            <p>
+              Our team combines technical expertise with creative vision to 
+              deliver solutions that not only meet but exceed expectations.
+            </p>
+            <div className="stats">
+              <div className="stat">
+                <span className="stat-number">50+</span>
+                <span className="stat-label">Projects Completed</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">10+</span>
+                <span className="stat-label">Years Experience</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </Html>
+      </Html>
+    </group>
   );
 }
 
